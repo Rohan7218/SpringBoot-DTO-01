@@ -37,18 +37,5 @@ public class UserController {
 		UserResponseDto userResponseDto = userResource.getUserInfo(id);
 		return new ResponseEntity<UserResponseDto>(userResponseDto, HttpStatus.OK);
 	}
-	
-
-	@GetMapping(value = "/home")
-	public String home()
-	{
-		return "Home";
-	}
-
-	@GetMapping(value = "/welcome")
-	public String welcome()
-	{
-		return "welcome";
-	}
 
 }
