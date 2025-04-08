@@ -51,11 +51,5 @@ public class UserController {
 		return "welcome";
 	}
 
-	@GetMapping(value = "develop")
-	public String welcome()
-	{
-		return "develop";
-	}
-
 
 }
