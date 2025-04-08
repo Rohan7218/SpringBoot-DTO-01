@@ -38,10 +38,17 @@ public class UserController {
 		return new ResponseEntity<UserResponseDto>(userResponseDto, HttpStatus.OK);
 	}
 	
+<<<<<<< Updated upstream
 	@GetMapping(value = "/home")
 	public String home()
 	{
 		return "Home";
+=======
+	@GetMapping(value = "/welcome")
+	public String welcome()
+	{
+		return "welcome";
+>>>>>>> Stashed changes
 	}
 
 }
