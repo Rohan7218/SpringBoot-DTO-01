@@ -50,6 +50,12 @@ public class UserController {
 	{
 		return "welcome";
 	}
+	
+	@GetMapping(value = "develop")
+	public String develop()
+	{
+		return "develop";
+	}
 
 
 }
