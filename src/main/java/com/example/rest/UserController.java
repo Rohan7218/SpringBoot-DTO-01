@@ -32,13 +32,13 @@ public class UserController {
 	}
 
 	@GetMapping(value = "/users/{id}")
-	public ResponseEntity<UserResponseDto> getUserInfo(@PathVariable Integer id) {
+	public ResponseEntity<UserResponseDto> getUserInfo(@PathVariable Integer id) 
+	{
 
 		UserResponseDto userResponseDto = userResource.getUserInfo(id);
 		return new ResponseEntity<UserResponseDto>(userResponseDto, HttpStatus.OK);
 	}
 	
-
 	@GetMapping(value = "/home")
 	public String home()
 	{
